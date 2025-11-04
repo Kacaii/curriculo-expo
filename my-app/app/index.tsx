@@ -1,7 +1,14 @@
 import { Text, View } from "react-native";
 import React from "react";
 
-const lang = ["Typescript", "Javascript", "Golang", "Zig", "Python", "SQL"];
+const languages = [
+  "Typescript",
+  "Javascript",
+  "Golang",
+  "Zig",
+  "Python",
+  "SQL",
+];
 
 export default function Index() {
   return (
@@ -17,7 +24,7 @@ export default function Index() {
       </Text>
 
       <Text style={{ fontWeight: "bold" }}>Languages</Text>
-      {lang.map((language, index) => (
+      {languages.map((language, index) => (
         <ViewLanguage key={index} lang={language} />
       ))}
     </View>
